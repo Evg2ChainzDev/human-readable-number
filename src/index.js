@@ -39,7 +39,9 @@ module.exports = function toReadable (number) {
         let hundreds = Math.floor(number/100);
         let dozens = Math.floor((number-(hundreds*100))/10);
         let units = number-(hundreds*100)-(dozens*10);
+        if (units==0) {return zeroToNineteen[hundreds]+' hundred ' + twentyToNinety[dozens]} else {
         return zeroToNineteen[hundreds]+' hundred ' + twentyToNinety[dozens]+' '+zeroToNineteen[units];
+        }
     }
    }
-   
+   ;
