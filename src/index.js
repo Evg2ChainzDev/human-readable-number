@@ -41,7 +41,5 @@ module.exports = function toReadable (number) {
         let units = number-(hundreds*100)-(dozens*10);
         return zeroToNineteen[hundreds]+' hundred ' + twentyToNinety[dozens]+' '+zeroToNineteen[units];
     }
-   } 
-
-  console.log(toReadable(296));
-
+   }
+   
